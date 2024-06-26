@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/public/imagee.png" />
+    <title>Uzum Market — интернет-магазин</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+  <div id="signin-modal" class="signinModal">
+    <div class="modal-signin__content">
+      <div class="crossCancel">
+        <svg id="crossSvg" data-v-865504c4="" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+          <rect width="24" height="24" rx="12" fill="#DFE0E2"></rect>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.28033 7.21967C7.98744 6.92678 7.51256 6.92678 7.21967 7.21967C6.92678 7.51256 6.92678 7.98744 7.21967 8.28033L10.9393 12L7.21967 15.7197C6.92678 16.0126 6.92678 16.4874 7.21967 16.7803C7.51256 17.0732 7.98744 17.0732 8.28033 16.7803L12 13.0607L15.7197 16.7803C16.0126 17.0732 16.4874 17.0732 16.7803 16.7803C17.0732 16.4874 17.0732 16.0126 16.7803 15.7197L13.0607 12L16.7803 8.28033C17.0732 7.98744 17.0732 7.51256 16.7803 7.21967C16.4874 6.92678 16.0126 6.92678 15.7197 7.21967L12 10.9393L8.28033 7.21967Z" fill="#4E5155"></path>
+          </svg>
+      </div>
+      <h2>Введите номер телефона</h2>
+      <p>Отправим смс с кодом подтверждения</p>
+
+      <form name="signin">
+        <input name="numb" placeholder="+998-00-000 00" type="text" required>
+        <button type="submit">Получить код</button>
+      </form>
+      
+      <a class="reg" href="/pages/signup/">Зарегестрироватся</a>
+
+        <p class="autorr">Авторизуясь, вы соглашаетесь c <a href="#">политикой обработки персональных данных</a></p>
+      </div>
+    </div>
+
+    <div class="head"></div>
+    <header></header>
+
+    <div class="catalog_modal">
+      <div class="overlay">
+  
+      </div>
+  
+      <div class="catalog_content">
+        <div class="container_modal">
+        <p>Категории товаров</p>
+        <div class="sorted_modal">
+        <div class="h1s">
+          <h1 id="furniture">Фурнитура</h1>
+          <h1 id="audio">Аудио</h1>
+          <h1 id="PC">PC</h1>
+          <h1 id="TV">ТВ</h1>
+          <h1 id="kitchen">Кухня</h1>
+        </div>
+          </div>
+           
+        </div>
+       
+        
+      </div>
+  
+    </div>
+
+    <div class="search_modal">
+        <div class="search_content">
+          <div class="search_container">
+            <div class="cross">
+              <img src="/public/free-icon-cancel-130887.png" alt="">
+            </div>
+           
+            <div class="search">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+        <h1 class="myFavorite"></h1>
+
+        <div class="hr">
+
+            <hr>
+
+        </div>
+    </div>
+
+    <div class="boxAddFav">
+
+    </div>
+
+    <div class="container">
+            <div class="boxProduct">
+
+            </div>
+        </div>
+
+        <section class="sort">
+          <div class="container">
+            <div class="title">
+              <h1 id="nameType"></h1>
+            </div>
+      
+            <div class="sort__box">
+              
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+            <div class="title">
+                <h1>Популярные товары</h1>
+            </div>
+            <div class="popular__box">
+
+            </div>
+        </div>
+
+    <footer></footer>
+    <script src="/modules/component.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

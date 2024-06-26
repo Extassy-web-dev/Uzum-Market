@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/public/imagee.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uzum Market — интернет-магазин</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/media.css">
+</head>
+
+<body>
+
+  <div id="signin-modal" class="signinModal">
+    <div class="modal-signin__content">
+      <div class="crossCancel">
+        <svg id="crossSvg" data-v-865504c4="" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+          <rect width="24" height="24" rx="12" fill="#DFE0E2"></rect>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.28033 7.21967C7.98744 6.92678 7.51256 6.92678 7.21967 7.21967C6.92678 7.51256 6.92678 7.98744 7.21967 8.28033L10.9393 12L7.21967 15.7197C6.92678 16.0126 6.92678 16.4874 7.21967 16.7803C7.51256 17.0732 7.98744 17.0732 8.28033 16.7803L12 13.0607L15.7197 16.7803C16.0126 17.0732 16.4874 17.0732 16.7803 16.7803C17.0732 16.4874 17.0732 16.0126 16.7803 15.7197L13.0607 12L16.7803 8.28033C17.0732 7.98744 17.0732 7.51256 16.7803 7.21967C16.4874 6.92678 16.0126 6.92678 15.7197 7.21967L12 10.9393L8.28033 7.21967Z" fill="#4E5155"></path>
+          </svg>
+      </div>
+      <h2>Введите номер телефона</h2>
+      <p>Отправим смс с кодом подтверждения</p>
+
+      <form name="signin">
+        <input name="numb" placeholder="+998-00-000 00" type="text" required>
+        <button type="submit">Получить код</button>
+      </form>
+      
+      <a class="reg" href="/pages/signup/">Зарегестрироватся</a>
+
+        <div class="pcenter">
+          <p class="autorr">Авторизуясь, вы соглашаетесь c <a href="#">политикой обработки персональных данных</a></p>
+        </div>
+      </div>
+    </div>
+  
+
+  <div class="head">
+    <div class="container">
+      <div class="box">
+        <div class="left">
+          <div>
+            <svg data-v-50d82c62="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7 11C7 8.23858 9.23858 6 12 6C14.7614 6 17 8.23858 17 11C17 13.2317 15.8079 15.2429 14.5153 16.7262C13.8738 17.4623 13.2212 18.0525 12.7097 18.4561C12.4536 18.6582 12.2375 18.8098 12.0802 18.9082C12.0504 18.9268 12.0237 18.9429 12 18.9567C11.9763 18.9429 11.9496 18.9268 11.9198 18.9082C11.7625 18.8098 11.5464 18.6582 11.2903 18.4561C10.7788 18.0525 10.1262 17.4623 9.48471 16.7262C8.19208 15.2429 7 13.2317 7 11ZM12 5C8.68629 5 6 7.68629 6 11C6 13.5808 7.36827 15.8196 8.73081 17.3832C9.41691 18.1705 10.1156 18.803 10.6709 19.2411C10.9482 19.46 11.1944 19.634 11.3897 19.7561C11.4866 19.8167 11.5778 19.8688 11.6582 19.9076C11.6982 19.9269 11.7428 19.9465 11.7889 19.9623C11.8251 19.9747 11.9044 20 12 20C12.0956 20 12.1749 19.9747 12.2111 19.9623C12.2572 19.9465 12.3018 19.9269 12.3418 19.9076C12.4222 19.8688 12.5134 19.8167 12.6103 19.7561C12.8056 19.634 13.0518 19.46 13.3291 19.2411C13.8844 18.803 14.5831 18.1705 15.2692 17.3832C16.6317 15.8196 18 13.5808 18 11C18 7.68629 15.3137 5 12 5ZM11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11ZM12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9Z" fill="#141415"></path>
+              </svg>
+              <p>Город: <span class="city">Самараканд</span></p>
+          </div>
+            <p class="punkti">Пункты выдачи</p>
+        </div>
+        <div class="center">
+          <p> Доставим ваш заказ бесплатно — всего за 1 день! </p>
+        </div>
+        <div class="right">
+          <p class="sellOnUzum">Продавайте на Uzum</p>
+          <p>Вопрос-ответ</p>
+          <p>Мои заказы</p>
+          <div>
+            <svg data-v-634bcbae="" width="20" height="20" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+              <mask id="mask0_9302_3025" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
+              <path d="M10 20.5C15.5228 20.5 20 16.0228 20 10.5C20 4.97715 15.5228 0.5 10 0.5C4.47715 0.5 0 4.97715 0 10.5C0 16.0228 4.47715 20.5 10 20.5Z" fill="#F4F5F5"></path>
+              </mask>
+              <g mask="url(#mask0_9302_3025)">
+              <rect y="0.5" width="20" height="20" fill="white"></rect>
+              <rect y="13.5" width="20" height="7" fill="#E63838"></rect>
+              <rect y="7" width="20" height="7" fill="#3131C4"></rect>
+              </g>
+              </svg>
+              <p>Русский</p>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="header__box">
+        <a href="/"><img src="/public/Без названия (1) 1.svg" alt=""></a>
+        <button id="catalog" class="catalogBtn">Каталог</button>
+        <form name="search">
+          <input id="searchInp" placeholder="Искать товары и категории" type="text" name="inp">
+          <div class="labelline">Искать товары и категории</div>
+          <button><svg data-v-1b1e6dd2="" width="28" height="28" viewBox="0 0 24 24" fill="black"
+              xmlns="http://www.w3.org/2000/svg" class="ui-icon  magnifying-glass">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.5 10.5C15.5 13.2614 13.2614 15.5 10.5 15.5C7.73858 15.5 5.5 13.2614 5.5 10.5C5.5 7.73858 7.73858 5.5 10.5 5.5C13.2614 5.5 15.5 7.73858 15.5 10.5ZM14.3398 15.7451C13.264 16.5341 11.9364 17 10.5 17C6.91015 17 4 14.0899 4 10.5C4 6.91015 6.91015 4 10.5 4C14.0899 4 17 6.91015 17 10.5C17 11.9364 16.5341 13.264 15.7451 14.3398L19.709 18.3036C20.097 18.6917 20.097 19.3209 19.709 19.709C19.3209 20.097 18.6917 20.097 18.3036 19.709L14.3398 15.7451Z">
+              </path>
+            </svg></button>
+        </form>
+        <div class="elem div">
+          <img src="/public/Group 237729.svg" alt="">
+          <span class="userName">Войти</span>
+        </div>
+        <div class="elem item">
+          <svg data-v-50d82c62="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 5.5C5.26935 5.5 3.5 7.30906 3.5 9.5C3.5 10.4282 3.87684 11.4436 4.5487 12.5105C5.21692 13.5716 6.14148 14.6274 7.15127 15.6219C8.55769 17.007 10.0318 18.1879 11.1708 19.1003C11.4734 19.3427 11.7523 19.5661 12 19.7694C12.2477 19.5661 12.5266 19.3427 12.8292 19.1003C13.9682 18.1879 15.4423 17.007 16.8487 15.6219C17.8585 14.6274 18.7831 13.5716 19.4513 12.5105C20.1232 11.4436 20.5 10.4282 20.5 9.5C20.5 7.30898 18.7314 5.5 16.5 5.5C14.3473 5.5 13.0738 7.20226 12.7262 7.74742C12.3889 8.27655 11.6111 8.27653 11.2738 7.74742C10.9262 7.20225 9.65273 5.5 7.5 5.5ZM2 9.5C2 6.49094 4.43065 4 7.5 4C9.73143 4 11.2249 5.30207 12 6.21581C12.7751 5.30207 14.2686 4 16.5 4C19.5702 4 22 6.49102 22 9.5C22 10.8218 21.4706 12.1189 20.7206 13.3098C19.9669 14.5066 18.954 15.6539 17.9013 16.6906C16.4429 18.1269 14.808 19.4384 13.6502 20.3672C13.1649 20.7565 12.7634 21.0786 12.4939 21.3144C12.2111 21.5619 11.7889 21.5619 11.5061 21.3144C11.2366 21.0786 10.8351 20.7565 10.3498 20.3672C9.19201 19.4384 7.55712 18.1269 6.09873 16.6906C5.04602 15.6539 4.03308 14.5066 3.27942 13.3098C2.52941 12.1189 2 10.8218 2 9.5Z" fill="#141415"></path>
+            </svg>
+          <a href="/pages/favorite/">Избранное</a>
+        </div>
+        <div class="elem item">
+          <svg data-v-50d82c62="" width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg" class="ui-icon  slightly transparent icon-cart">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 6.5C9 4.88779 10.2402 3.5 12 3.5C13.7598 3.5 15 4.88779 15 6.5V7.5H9V6.5ZM7.5 9V11.5H9V9H15V11.5H16.5V9H18.5V19.75C18.5 20.1642 18.1642 20.5 17.75 20.5H6.25C5.83579 20.5 5.5 20.1642 5.5 19.75V9H7.5ZM7.5 7.5V6.5C7.5 4.11221 9.35984 2 12 2C14.6402 2 16.5 4.11221 16.5 6.5V7.5H19.25H20V8.25V19.75C20 20.9926 18.9926 22 17.75 22H6.25C5.00736 22 4 20.9926 4 19.75V8.25V7.5H4.75H7.5Z"></path>
+            </svg>
+          <a href="/pages/buscet/">Корзина</a>
+        </div>
+        
+        <p class="logout">Выйти</p>
+      </div>
+      <div class="catalog_modal">
+        <div class="overlay">
+    
+        </div>
+    
+        <div class="catalog_content">
+          <div class="container_modal">
+          <p>Категории товаров</p>
+          <div class="sorted_modal">
+            <div class="elemCateg">
+              <h1>Электроника</h1>
+              <p>Видеокарта</p>
+              <p>Наушники</p>
+              <p>Автомагнитола</p>
+              <p>Усилитель</p>
+            </div>
+            <div class="elemCateg">
+              <h1>Фурнитура</h1>
+              <p>Кресло</p>
+            </div>
+            <div class="elemCateg">
+              <h1>Кухня</h1>
+              <p>Холодильник</p>
+              <p>Посудомоечная машина</p>
+              <p>Плита</p>
+              <p>Электрочайник</p>
+              <p>Вытяжка</p>
+              <p>Стиральная машина</p>
+              <p>Утюг</p>
+              <p>Кофеварка</p>
+              <p>Мультиварка</p>
+            </div>
+            <div class="elemCateg">
+              <h1>Телевизоры и мониторы</h1>
+              <p>Телевизор</p>
+              <p>Монитор</p>
+            </div>
+            <div class="elemCateg">
+              <h1>Девайсы</h1>
+              <p>Системный блок</p>
+              <p>Микрофон</p>
+              <p>Колонки</p>
+              <p>Автомагнитола</p>
+              <p>Сплит-система</p>
+            </div>
+            <div class="elemCateg">
+              <h1>Игровые товары</h1>
+              <p>Кресло компьютерное</p>
+              <p>Видеокарта</p>
+              <p>Наушники</p>
+              <p>Монитор</p>
+              <p>Микрофон</p>
+              <p>Системный блок</p>
+            </div>
+            <div class="elemCateg">
+              <h1>Брендированые товары от:</h1>
+              <p>Haier</p>
+              <p>Hisense</p>
+              <p>Red Square</p>
+              <p>Bloody</p>
+            </div>
+            </div>
+             
+          </div>
+         
+          
+        </div>
+    
+      </div>
+
+      <div class="search_modal">
+        <div class="search_content">
+          <div class="search_container">
+            <div class="cross">
+              <img src="/public/free-icon-cancel-130887.png" alt="">
+            </div>
+           
+            <div class="search">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort">
+        <p>Все</p>
+        <p id="furniture">Фурнитура</p>
+        <p id="PC">PC</p>
+        <p id="audio">Аудио</p>
+        <p id="TV">ТВ</p>
+        <p id="kitchen">Кухня</p>
+      </div>
+     
+    </div>
+    </header>
+
+
+   
+
+  <div class="container">
+    <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp47vqffrr80f2glo6a0/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp5ffiffrr80f2gm0ga0/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp5fj0k0u44tu6dqd8kg/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp6ukndbnta2393fqlb0/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp3in8vj2e4ghqnrmh00/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp47s4ffrr80f2glo4tg/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp0vs2s0u44tu6dpd8bg/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp3ivrs0u44tu6dq07ag/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp67vhj6eisk548al0g0/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp3is5nj2e4ghqnrmj00/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp3in8vj2e4ghqnrmh00/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp67usfj2e4qlbispdhg/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+      <div class="swiper-slide"><img data-v-5288663b="" src="https://images.uzum.uz/cp5f76nfrr80f2gm0ec0/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+  </div>
+
+  
+<div class="wrap">
+  <section class="sort">
+    <div class="container">
+      <div class="title">
+        <h1 id="nameType"></h1>
+      </div>
+
+      <div class="sort__box">
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="popular">
+    <div class="container">
+      <div class="title">
+        <h1 id="nameProduct">Популярные</h1>
+      </div>
+      <div class="popular__box">
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <div class="btn">
+    <button id="BtnPC" class="show" type="button">Показать ещё 5</button>
+  </div>
+  
+  <section class="PC">
+    <div class="container">
+      <div class="title">
+        <h1 id="nameProduct">Pc</h1>
+      </div>
+      <div class="pc__box">
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="audio">
+    <div class="container">
+      <div class="title">
+        <h1 id="nameProduct">Audio</h1>
+      </div>
+      <div class="audio__box">
+        
+      </div>
+      
+    </div>
+  </section>
+
+
+  <section class="kitchen">
+    <div class="container">
+      <div class="title">
+        <h1 id="nameProduct">Kitchen</h1>
+      </div>
+      <div class="kitchen__box">
+        
+      </div>
+      
+    </div>
+  </section>
+
+
+  <section class="TV">
+    <div class="container">
+      <div class="title">
+        <h1 id="nameProduct">Tv</h1>
+      </div>
+      <div class="tv__box">
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="blackFriday">
+    <div class="container">
+      <div class="title">
+        <h1>On black friday</h1>
+      </div>
+      <div class="friday__box">
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="salePercentage">
+    <div class="container">
+      <div class="title">
+        <h1>Discount 50%</h1>
+      </div>
+      <div class="percentage__box">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="price">
+    <div class="container">
+      <div class="title">
+        <h1>Price is less than 10000</h1>
+      </div>
+      <div class="price__box">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="gamers">
+    <div class="container">
+      <div class="title">
+        <h1>Only gamers</h1>
+      </div>
+      <div class="game__box">
+
+      </div>
+    </div>
+  </section>
+
+  <div class="btn">
+    <button id="BtnGamers" class="show" type="button">Показать ещё 5</button>
+  </div>
+
+</div>
+
+
+  <footer>
+    <div class="container">
+      <div class="box">
+        <div class="elem">
+            <a class="active" href="#">О нас</a>
+            <a href="#">Пункты выдачи</a>
+            <a href="#">Вакансии</a>
+        </div>
+        <div class="elem">
+            <a class="active" href="#">Пользователям</a>
+            <a href="#">Связаться с нами</a>
+            <a href="#">Вопрос - Ответ</a>
+        </div>
+        <div class="elem">
+            <a class="active" href="#">Для предпренимателей</a>
+            <a href="#">Продавайте на Uzum</a>
+            <a href="#">Вход для продавцов</a>
+        </div>
+        <div class="elemImg">
+          <p>Скачать приложение</p>
+          <div class="flex">
+            <div>
+              <img src="/public/free-icon-apple-logo-747.png" alt="">
+              <p>AppStore</p>
+            </div>
+            <div>
+              <svg data-v-326dbf2b="" width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                <path d="M21.7756 11.5149L17.4561 9.05957L14.0156 12.5L17.4561 15.9405L21.7756 13.4852C22.541 13.0532 22.541 11.9468 21.7756 11.5149Z" fill="url(#paint0_linear)"></path>
+                <path d="M14.0156 12.5001L3.73969 2.22412C3.53508 2.42873 3.40625 2.70154 3.40625 3.0274V21.9727C3.40625 22.2986 3.53508 22.579 3.73969 22.776L14.0156 12.5001Z" fill="url(#paint1_linear)"></path>
+                <path d="M17.456 9.05959L5.10369 2.04225C4.62626 1.76943 4.08064 1.89068 3.73962 2.22412L14.0156 12.5001L17.456 9.05959Z" fill="url(#paint2_linear)"></path>
+                <path d="M14.0156 12.5001L3.73962 22.776C4.08064 23.117 4.62626 23.2307 5.10369 22.9579L17.456 15.9405L14.0156 12.5001Z" fill="url(#paint3_linear)"></path>
+                <defs>
+                <linearGradient id="paint0_linear" x1="14.0156" y1="12.5" x2="22.3516" y2="12.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFBD00"></stop>
+                <stop offset="1" stop-color="#FFE000"></stop>
+                </linearGradient>
+                <linearGradient id="paint1_linear" x1="14.0156" y1="12.5001" x2="3.40625" y2="23.1094" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00BEFF"></stop>
+                <stop offset="1" stop-color="#00E3FF"></stop>
+                </linearGradient>
+                <linearGradient id="paint2_linear" x1="3.40623" y1="1.89067" x2="14.0156" y2="12.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#15CF74"></stop>
+                <stop offset="1" stop-color="#00F076"></stop>
+                </linearGradient>
+                <linearGradient id="paint3_linear" x1="14.0156" y1="12.5001" x2="3.40623" y2="23.1094" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FF3A44"></stop>
+                <stop offset="1" stop-color="#E12653"></stop>
+                </linearGradient>
+                </defs>
+                </svg>
+                <p>Google Play</p>
+            </div>
+          </div>
+          <p>Uzum в соцсетях</p>
+          <div class="flex">
+            <svg data-v-21c51920="" width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+              <path d="M24 0C44 0 48 4 48 24C48 44 44 48 24 48C4 48 0 44 0 24C0 4 4 0 24 0Z" fill="url(#paint0_linear_instagram)"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9997 12.5224C27.7381 12.5224 28.1804 12.5369 29.657 12.6041C31.0218 12.6663 31.7631 12.8942 32.2566 13.0859C32.9102 13.3399 33.3764 13.6433 33.8665 14.1329C34.3567 14.623 34.6601 15.0893 34.9135 15.7428C35.1052 16.2363 35.3331 16.9776 35.3953 18.3425C35.4626 19.8185 35.477 20.2614 35.477 23.9997C35.477 27.7381 35.4626 28.1804 35.3953 29.657C35.3331 31.0218 35.1052 31.7631 34.9135 32.2566C34.6596 32.9102 34.3561 33.3764 33.8665 33.8665C33.3764 34.3567 32.9102 34.6601 32.2566 34.9135C31.7631 35.1052 31.0218 35.3331 29.657 35.3953C28.181 35.4626 27.7381 35.477 23.9997 35.477C20.2614 35.477 19.8185 35.4626 18.3425 35.3953C16.9776 35.3331 16.2363 35.1052 15.7428 34.9135C15.0893 34.6596 14.623 34.3561 14.1329 33.8665C13.6428 33.3764 13.3393 32.9102 13.0859 32.2566C12.8942 31.7631 12.6663 31.0218 12.6041 29.657C12.5369 28.181 12.5224 27.7381 12.5224 23.9997C12.5224 20.2614 12.5369 19.819 12.6041 18.3425C12.6663 16.9776 12.8942 16.2363 13.0859 15.7428C13.3399 15.0893 13.6433 14.623 14.1329 14.1329C14.623 13.6428 15.0893 13.3393 15.7428 13.0859C16.2363 12.8942 16.9776 12.6663 18.3425 12.6041C19.819 12.5369 20.2614 12.5224 23.9997 12.5224ZM23.9997 10C20.1975 10 19.7207 10.0161 18.2274 10.0845C16.7376 10.1523 15.72 10.389 14.8292 10.7352C13.9084 11.0931 13.1276 11.5716 12.3496 12.3501C11.5716 13.1282 11.0925 13.9089 10.7352 14.8292C10.389 15.72 10.1523 16.7376 10.0845 18.2274C10.0161 19.7207 10 20.1975 10 23.9997C10 27.802 10.0161 28.2788 10.0845 29.772C10.1523 31.2619 10.389 32.2794 10.7352 33.1702C11.0931 34.0911 11.5716 34.8718 12.3501 35.6499C13.1287 36.4284 13.9089 36.9069 14.8298 37.2648C15.72 37.611 16.7381 37.8477 18.228 37.9155C19.7212 37.9839 20.198 38 24.0003 38C27.8025 38 28.2793 37.9839 29.7726 37.9155C31.2624 37.8477 32.2805 37.611 33.1708 37.2648C34.0916 36.9069 34.8724 36.4284 35.6504 35.6499C36.429 34.8713 36.9075 34.0911 37.2653 33.1702C37.6115 32.28 37.8483 31.2619 37.9161 29.772C37.9844 28.2788 38.0006 27.802 38.0006 23.9997C38.0006 20.1975 37.9844 19.7207 37.9161 18.2274C37.8483 16.7376 37.6115 15.7195 37.2653 14.8292C36.9075 13.9084 36.429 13.1276 35.6504 12.3496C34.8718 11.571 34.0916 11.0925 33.1708 10.7347C32.2794 10.389 31.2619 10.1523 29.772 10.0845C28.2788 10.0161 27.802 10 23.9997 10ZM23.9997 16.8109C20.0291 16.8109 16.8109 20.0297 16.8109 23.9997C16.8109 27.9698 20.0297 31.1885 23.9997 31.1885C27.9698 31.1885 31.1885 27.9698 31.1885 23.9997C31.1885 20.0297 27.9703 16.8109 23.9997 16.8109ZM23.9997 28.6661C21.4223 28.6661 19.3333 26.5766 19.3333 23.9997C19.3333 21.4223 21.4228 19.3333 23.9997 19.3333C26.5766 19.3333 28.6661 21.4228 28.6661 23.9997C28.6661 26.5772 26.5772 28.6661 23.9997 28.6661ZM33.153 16.5264C33.153 17.4542 32.4009 18.2063 31.4731 18.2063C30.5453 18.2063 29.7931 17.4542 29.7931 16.5264C29.7931 15.5986 30.5453 14.8464 31.4731 14.8464C32.4009 14.8464 33.153 15.5986 33.153 16.5264Z" fill="white"></path>
+              <defs>
+                <linearGradient id="paint0_linear_instagram" x1="42.8104" y1="5.6564" x2="5.04419" y2="42.4854" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BA00B2"></stop>
+                  <stop offset="0.5" stop-color="#F40000"></stop>
+                  <stop offset="1" stop-color="#FFA800"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg data-v-21c51920="" width="32" height="32" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+              <path d="M22 0C40.3333 0 44 3.66667 44 22C44 40.3333 40.3333 44 22 44C3.66667 44 0 40.3333 0 22C0 3.66667 3.66667 0 22 0Z" fill="url(#paint0_linear_5786_39548)"></path>
+              <path d="M10.8091 21.8156C17.2226 19.0214 21.4992 17.1792 23.639 16.2892C29.7487 13.748 31.0182 13.3066 31.8457 13.2918C32.0277 13.2888 32.4346 13.3339 32.6982 13.5478C32.9207 13.7284 32.982 13.9723 33.0113 14.1436C33.0406 14.3148 33.0771 14.7048 33.0481 15.0096C32.717 18.4883 31.2844 26.9303 30.5556 30.8265C30.2472 32.4751 29.6399 33.0279 29.0521 33.082C27.7745 33.1996 26.8044 32.2377 25.567 31.4266C23.6307 30.1573 22.5368 29.3672 20.6573 28.1286C18.4852 26.6973 19.8933 25.9105 21.1311 24.6248C21.4551 24.2884 27.0842 19.1683 27.1931 18.7038C27.2067 18.6458 27.2194 18.4292 27.0907 18.3149C26.9621 18.2006 26.7722 18.2397 26.6352 18.2707C26.441 18.3148 23.3478 20.3593 17.3555 24.4043C16.4775 25.0072 15.6822 25.301 14.9697 25.2856C14.1842 25.2686 12.6732 24.8414 11.5499 24.4763C10.1721 24.0284 9.07712 23.7917 9.17248 23.0311C9.22214 22.6349 9.76769 22.2297 10.8091 21.8156Z" fill="white"></path>
+              <defs>
+              <linearGradient id="paint0_linear_5786_39548" x1="22" y1="0" x2="22" y2="43.6735" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#2AABEE"></stop>
+              <stop offset="1" stop-color="#229ED9"></stop>
+              </linearGradient>
+              </defs>
+              </svg>
+              <svg data-v-21c51920="" width="32" height="32" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+                <path d="M22 0C40.3333 0 44 3.66667 44 22C44 40.3333 40.3333 44 22 44C3.66667 44 0 40.3333 0 22C0 3.66667 3.66667 0 22 0Z" fill="#FF0000"></path>
+                <path d="M16.5 29.3334L30.25 22L16.5 14.6667V29.3334Z" fill="white"></path>
+                </svg>
+                <svg data-v-21c51920="" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve" width="32" height="32" class="ui-icon ">
+                  <style type="text/css">
+                    .st0{fill:#3B5998;}
+                    .st1{fill:#FFFFFF;}
+                  </style>
+                    <g id="surface1">
+                    <path class="st0" d="M36,31c0,2.8-2.2,5-5,5H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h26c2.8,0,5,2.2,5,5V31z"></path>
+                      <path class="st1" d="M28.4,19H25v13h-5V19h-3v-4h3v-2.4C20,9.1,21.5,7,25.6,7H29v4h-2.3c-1.6,0-1.7,0.6-1.7,1.7V15h4L28.4,19z"></path>
+                  </g>
+                  </svg>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="foot">
+        <div>
+          <a href="#">Соглашение о конфиденциальности</a>
+        <a href="#">Пользовательское соглашение</a>
+        </div>
+        <p>«2024© ООО «UZUM MARKET». ИНН 309376127. Все права защищены»</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

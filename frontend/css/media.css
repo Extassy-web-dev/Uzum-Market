@@ -1,0 +1,36 @@
+@media (max-width: 1000px) {
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .popular__box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        .popular__elem {
+            width: 200px;
+
+            .poster {
+                width: 200px;
+            }
+        }
+        .header__box {
+            
+        }
+    }
+}
+@media (max-width: 800px) {
+    .container {
+        width: 800px;
+        margin: 0 auto;
+        padding: 0 20px 0;
+    }
+    .popular__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+}

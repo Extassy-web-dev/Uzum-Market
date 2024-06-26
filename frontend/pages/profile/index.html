@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/public/imagee.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки личного кабинета</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="head"></div>
+    <header></header>
+    
+    <div class="search_modal">
+        <div class="search_content">
+          <div class="search_container">
+            <div class="cross">
+              <img src="/public/free-icon-cancel-130887.png" alt="">
+            </div>
+           
+            <div class="search">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+          <div class="userNameDiv">
+            <p class="user-Name">Артём</p>
+          </div>
+      </div>
+
+
+      <div class="container">
+
+        <div class="boxProfile">
+          <form class="patch" name="patch">
+              <h3>Мои данные</h3>
+                <div class="elemProfile">
+                  <div class="elem">
+                    <p>Фамилия</p>
+                    <input name="surname" placeholder="Фамилия" class="nameInp" type="text" required>
+                  </div>
+                  <div class="elem">
+                    <p>Имя</p>
+                    <input name="name" placeholder="Имя" class="surnInp" type="text" required>
+                  </div>
+                  <div class="elem">
+                    <p>Отчество</p>
+                    <input name="patronymic" placeholder="Отчество" type="text">
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="elemProfile">
+                  <div class="elem">
+                    <p>Электронная почта</p>
+                    <input name="email" placeholder="example@mail.ru" type="email" class="emailInp" name="" id="" required>
+                  </div>
+                  <div class="elem">
+                    <p>Номер телефона</p>
+                    <input name="phone" placeholder="+998__ __-_-__" type="tel" name="" class="telInp" id="" required>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="elemProfile">
+                  <div class="elem">
+                    <p>Пол</p>
+                    <div class="btnsgender">
+                      <p id="male">Мужской</p>
+                      <p id="female">Женский</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="elemProfile">
+                  <div class="elem">
+                    <p>Дата рождения</p>
+                    <input name="birthd" type="date">
+                  </div>
+                </div>
+                <div class="btns">
+                  <p class="log-out">Выйти из системы</p>
+                  <button type="submit">Сохранить</button>
+                </div>
+            </form>
+          </div>
+      </div>
+
+    <section class="sort">
+        <div class="container">
+          <div class="title">
+            <h1 id="nameType"></h1>
+          </div>
+    
+          <div class="sort__box">
+            
+          </div>
+        </div>
+      </section>
+
+    <footer></footer>
+    <script type="module" src="/modules/component.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
